@@ -4,7 +4,7 @@
     "name": "AllTech",
     "url": "https://www.alltechconsulting.fr/"
   },
-  "version": "0.1.1",
+  "version": "0.1.2",
   "type": "module",
   "keywords": [
     "slidev-theme",
