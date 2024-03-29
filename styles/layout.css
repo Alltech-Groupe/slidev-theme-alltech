@@ -1,0 +1,39 @@
+:root {
+  /* default theme color */
+  /* can be overrided by uses `themeConfig` option */
+  --slidev-theme-primary: #e7ad51;
+  --slidev-code-background: transparent;
+}
+
+.slidev-layout {
+  &.center,
+  &.default {
+    @apply w-full h-full overflow-hidden;
+    @apply flex flex-col justify-center items-center place-self-center;
+  }
+}
+
+#slide-content .slidev-layout.end {
+  @apply w-full h-full text-3xl;
+  color: var(--prism-foreground);
+  background-color: var(--slidev-slide-container-background);
+}
+
+.slidev-layout.cover,
+.slidev-layout.intro {
+  @apply h-full grid;
+
+  h1 {
+    @apply text-6xl leading-20;
+  }
+
+  h1 + p {
+    @apply -mt-2 opacity-50 mb-4;
+  }
+
+  p + h2,
+  ul + h2,
+  table + h2 {
+    @apply mt-10;
+  }
+}

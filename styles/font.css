@@ -1,0 +1,16 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply font-serif;
+}
+
+h1::before,
+h2::before,
+h3::before {
+  content: "#";
+  margin-right: 0.5rem;
+  color: #e7ad51;
+}
