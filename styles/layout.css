@@ -37,3 +37,7 @@
     @apply mt-10;
   }
 }
+
+.slidev-monaco-container {
+  width: inherit;
+}
